@@ -1,0 +1,30 @@
+# Naming conventions for Sharepoint Lists and Libraries
+
+## Column Types
+- Single text
+- Lookup fields
+- Selected Option(s)
+- Available Options(s)
+
+### Single text
+Content is limited to 256 characters
+
+### Lookup fields
+Relationship with other list, using a record Id.
+
+Name format: LocationId
+
+Advantage: query columns from connected list
+Disadvantage: not suitable for lists changable in time
+
+### Selected Option(s)
+Single text field which stores Title or any other identification data.
+
+Name format: ImagesOptUid
+Data format: CH1;CH2
+
+## Available Option(s)
+Single text field (if the length is enough).
+
+Name format: ImagesOptAvailable
+Data format: GROUPA=CH1|CH2;GROUPB=CH3|CH4
